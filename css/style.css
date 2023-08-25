@@ -1,6 +1,126 @@
-h1 {
-  font-family: "Playfair Display", serif;
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --main-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Nunito", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .heading {
+    padding-top: 15vh !important;
+  }
+  .social-icons {
+    bottom: 40vh !important;
+  }
+  .projects-button {
+    top: 70vh !important;
+  }
+  .contact-button {
+    top: 77vh !important;
+  }
+}
+@media (max-width: 900px) {
+  .social-icons {
+    bottom: 55vh !important;
+  }
+  .projects-button {
+    top: 51vh !important;
+  }
+  .contact-button {
+    top: 58vh !important;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    background-image: url("../images/small-background.png") !important;
+    height: 100vh !important;
+    min-height: 900px;
+  }
+  h1,
+  h3 {
+    max-width: 234px !important;
+    font-size: 36px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+    text-align: center;
+    width: 184px;
+    margin-top: 90px;
+    margin-left: 142px;
+  }
+  .heading {
+    padding-top: 101px !important;
+  }
+  .contact-button {
+    left: 48vw !important;
+  }
+  .social-icons {
+    bottom: 10vh !important;
+    left: 20vw !important;
+  }
+  .fa-facebook,
+  .fa-linkedin,
+  .fa-instagram {
+    padding-right: 4vw !important;
+  }
+  i {
+    font-size: 9vw !important;
+  }
+}
+body {
+  color: var(--primary-color);
+}
+h1,
+h3 {
+  font-family: var(--main-font-family);
+  font-size: 5vw;
+}
+
 h2 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--secondary-font-family);
+  font-size: 2vw;
+}
+i {
+  color: var(--secondary-color);
+  font-size: 4vw;
+}
+a {
+  font-size: 3vw;
+}
+.home-icon {
+  display: inline-block;
+  padding: 15px;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  line-height: 1 !important;
+  font-family: none !important;
+}
+.home-icon i {
+  font-size: 4vw;
+}
+.hero {
+  background-size: cover;
+  background-clip: content-box;
+  background-position: top center;
+  background-image: url("../images/main-background.png");
+  width: 98.5vw;
+  height: 146vh;
+}
+.heading {
+  padding-top: 28vh;
+  padding-left: 6.5vw;
+}
+.social-icons {
+  bottom: 6vh;
+  left: 37vw;
+}
+.homepage-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 0 0 30vw;
+}
+.fa-facebook,
+.fa-linkedin,
+.fa-instagram {
+  padding-right: 4vw;
 }
