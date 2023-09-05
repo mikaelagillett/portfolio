@@ -8,6 +8,9 @@
 body {
   color: var(--primary-color);
 }
+nav {
+  font-family: var(--main-font-family);
+}
 h1,
 h3 {
   font-family: var(--main-font-family);
@@ -41,16 +44,12 @@ a {
   background-clip: content-box;
   background-position: top center;
   background-image: url("../images/main-background.png");
-  width: 98.5vw;
+  width: 98.7vw;
   height: 146vh;
 }
 .heading {
   padding-top: 28vh;
   padding-left: 6.5vw;
-}
-.social-icons {
-  bottom: 6vh;
-  left: 37vw;
 }
 .homepage-buttons {
   display: flex;
@@ -58,17 +57,19 @@ a {
   margin: 20vh 0 0 30vw;
   width: 12vw;
 }
-.fa-facebook,
-.fa-linkedin,
-.fa-instagram {
-  padding-right: 4vw;
+.btn-light:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  top: 130vh;
+}
+
 @media (max-width: 1200px) {
   .heading {
     padding-top: 15vh !important;
-  }
-  .social-icons {
-    bottom: 40vh !important;
   }
   .projects-button {
     top: 70vh !important;
@@ -76,11 +77,12 @@ a {
   .contact-button {
     top: 77vh !important;
   }
+  .social-icons {
+    top: 0;
+    right: 0;
+  }
 }
 @media (max-width: 900px) {
-  .social-icons {
-    bottom: 55vh !important;
-  }
   .projects-button {
     top: 51vh !important;
   }
@@ -89,9 +91,6 @@ a {
   }
 }
 @media (max-width: 700px) {
-  .social-icons {
-    bottom: 75vh !important;
-  }
   .projects-button {
     top: 51vh !important;
   }
@@ -110,7 +109,7 @@ a {
 @media (max-width: 500px) {
   .hero {
     background-image: url("../images/small-background.png") !important;
-    height: 100vh !important;
+    width: 100vw;
     min-height: 900px;
   }
   h1,
@@ -131,10 +130,6 @@ a {
   .contact-button {
     left: 48vw !important;
   }
-  .social-icons {
-    bottom: 10vh !important;
-    left: 20vw !important;
-  }
   .fa-facebook,
   .fa-linkedin,
   .fa-instagram {
@@ -142,5 +137,9 @@ a {
   }
   i {
     font-size: 9vw !important;
+  }
+  .social-icons {
+    top: 90vh;
+    right: auto;
   }
 }
