@@ -74,6 +74,12 @@ a {
   justify-content: space-evenly;
   top: 140vh;
 }
+.social-icons-project {
+  display: flex;
+  justify-content: space-evenly;
+  top: 10vh;
+  right: 0;
+}
 .profile-picture {
   width: 271px;
   border-radius: 50px;
@@ -81,7 +87,7 @@ a {
   top: 128px;
   right: 128px;
 }
-.about-heading {
+.extra-headings {
   padding-top: 15vh;
   padding-left: 6vw;
 }
@@ -100,6 +106,17 @@ a {
 }
 .project-link:hover {
   text-decoration: underline;
+}
+.project-image img {
+  max-width: 50vw;
+  max-height: 80vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
