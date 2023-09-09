@@ -42,8 +42,7 @@ a {
 .home-icon i {
   font-size: 4vw;
 }
-.hero,
-.about {
+.content {
   background-size: cover;
   background-clip: content-box;
   background-position: top center;
@@ -83,15 +82,15 @@ a {
   right: 128px;
 }
 .about-heading {
-  padding-top: 97px;
-  padding-left: 84px;
+  padding-top: 15vh;
+  padding-left: 6vw;
 }
 .about-par-1 {
-  margin-left: 84px;
-  margin-top: 10px;
+  margin-left: 6vw;
+  margin-top: 2vh;
 }
 .about-par-2 {
-  margin-left: 315px;
+  margin-left: 30vw;
   margin-top: 100px;
 }
 .project-link {
@@ -113,9 +112,13 @@ a {
   .contact-button {
     top: 77vh !important;
   }
-  .social-icons {
-    top: 0;
+  .social-icons,
+  .social-icons-about {
+    top: 8vh;
     right: 0;
+  }
+  .about-par-2 {
+    margin-top: 50px;
   }
 }
 @media (max-width: 900px) {
@@ -124,6 +127,9 @@ a {
   }
   .contact-button {
     top: 58vh !important;
+  }
+  .profile-picture {
+    display: none;
   }
 }
 @media (max-width: 700px) {
@@ -141,9 +147,15 @@ a {
   a {
     font-size: 3vw !important;
   }
+  p {
+    font-size: 3vw;
+  }
+  .about-par-2 {
+    margin-top: 500px;
+  }
 }
 @media (max-width: 500px) {
-  .hero {
+  .content {
     background-image: url("../images/small-background.png") !important;
     width: 100vw;
     min-height: 900px;
@@ -177,5 +189,9 @@ a {
   .social-icons {
     top: 90vh;
     right: auto;
+  }
+  .about-par-2 {
+    margin-top: 50px;
+    margin-left: 50vw;
   }
 }
