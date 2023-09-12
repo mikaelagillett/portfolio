@@ -180,6 +180,19 @@ a {
   border-radius: 100px;
   margin: 10px;
 }
+.code-link {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.code-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
 @media (max-width: 1200px) {
   .heading {
     padding-top: 15vh !important;
